@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/next"
         android:layout_width="251dp"
         android:layout_height="106dp"
         android:layout_marginStart="80dp"
@@ -36,5 +36,32 @@
         android:textSize="65dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="138dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="404dp"
+        android:onClick="nextpage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:srcCompat="@drawable/butt1" />
+
+    <TextView
+        android:id="@+id/usr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        android:text="Next"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
