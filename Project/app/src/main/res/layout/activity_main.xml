@@ -43,7 +43,7 @@
         android:background="@null"
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center_horizontal"
-        android:text="COWAR Some Commit from prix"
+        android:text="COWAR rEcOMMIT "
         android:textColor="#000000"
         android:textSize="65dp"
         app:layout_constraintStart_toStartOf="parent"
