@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/CoronaApp.iml" filepath="$PROJECT_DIR$/CoronaApp.iml" group="CoronaApp" />
+||||||| merged common ancestors
+      <module fileurl="file://$PROJECT_DIR$/.idea/CoroCoro.iml" filepath="$PROJECT_DIR$/.idea/CoroCoro.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/NOCOROCORO.iml" filepath="$PROJECT_DIR$/.idea/NOCOROCORO.iml" />
+>>>>>>> 23d0476549da08f291803a0d65c35ff60a108e80
     </modules>
   </component>
 </project>
