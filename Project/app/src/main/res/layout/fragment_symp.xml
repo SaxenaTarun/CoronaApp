@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <Button
+        android:id="@+id/cough"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="154dp"
+        android:background="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/breath"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="190dp"
+        android:background="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="407dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Checkout for Coronvirus Symptoms"
+        android:textColor="#C036383A"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/block"
+        android:gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/block"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@drawable/block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="330dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="14dp"
+        android:background="@null"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal"
+        android:text="Symptoms"
+        android:textColor="#ffffff"
+        android:textSize="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/lady"
+        android:layout_width="414dp"
+        android:layout_height="320dp"
+        android:background="@drawable/sympf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/shaking"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="228dp"
+        android:background="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/dir"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="261dp"
+        android:background="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/head"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="84dp"
+        android:background="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/fever"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="120dp"
+        android:background="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="73dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:background="#C036383A"
+        android:text="RESET"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dir" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
