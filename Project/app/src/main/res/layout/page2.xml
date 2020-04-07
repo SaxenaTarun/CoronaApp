@@ -85,6 +85,7 @@
         android:fontFamily="sans-serif-condensed-medium"
 
         android:text="VOLUNTEER"
+        android:onClick="VolunteerPage"
         android:textColor="#ffffff"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"

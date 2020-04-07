@@ -17,7 +17,11 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".page2" />
         <activity android:name=".Userhome" />
+        <activity android:name=".VolunteerHome"/>
+        <activity android:name=".VolunteerLogin"/>
         <activity android:name=".MainActivity">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
