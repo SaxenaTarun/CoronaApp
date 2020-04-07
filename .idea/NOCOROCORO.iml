@@ -3,13 +3,13 @@
   <component name="FacetManager">
     <facet type="android" name="Android">
       <configuration>
-        <option name="GEN_FOLDER_RELATIVE_PATH_APT" value="/../../CoroCoro/gen" />
-        <option name="GEN_FOLDER_RELATIVE_PATH_AIDL" value="/../../CoroCoro/gen" />
-        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/../../CoroCoro/AndroidManifest.xml" />
-        <option name="RES_FOLDER_RELATIVE_PATH" value="/../../CoroCoro/res" />
-        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/../../CoroCoro/assets" />
-        <option name="LIBS_FOLDER_RELATIVE_PATH" value="/../../CoroCoro/libs" />
-        <option name="PROGUARD_LOGS_FOLDER_RELATIVE_PATH" value="/../../CoroCoro/proguard_logs" />
+        <option name="GEN_FOLDER_RELATIVE_PATH_APT" value="/../../NOCOROCORO/gen" />
+        <option name="GEN_FOLDER_RELATIVE_PATH_AIDL" value="/../../NOCOROCORO/gen" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/../../NOCOROCORO/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/../../NOCOROCORO/res" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/../../NOCOROCORO/assets" />
+        <option name="LIBS_FOLDER_RELATIVE_PATH" value="/../../NOCOROCORO/libs" />
+        <option name="PROGUARD_LOGS_FOLDER_RELATIVE_PATH" value="/../../NOCOROCORO/proguard_logs" />
       </configuration>
     </facet>
   </component>
