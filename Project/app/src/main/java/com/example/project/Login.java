@@ -20,4 +20,6 @@ public class Login extends AppCompatActivity {
     public void register(View view) {
         startActivity(new Intent(Login.this, RegisterActivity.class));
     }
+
+
 }
