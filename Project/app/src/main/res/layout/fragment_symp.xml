@@ -130,4 +130,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="73dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:background="#C036383A"
+        android:text="RESET"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dir" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

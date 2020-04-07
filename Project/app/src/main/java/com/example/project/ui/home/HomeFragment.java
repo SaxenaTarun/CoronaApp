@@ -64,6 +64,18 @@ public class HomeFragment extends Fragment {
                 s.setBackgroundColor(getResources().getColor(R.color.change));
             }
         });
+        final Button r = (Button) v.findViewById( R.id.reset);
+        r.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                f.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+                b.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+                s.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+                d.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+                h.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+                c.setBackgroundColor(getResources().getColor(R.color.colorAccent));
+            }
+        });
 
 
         return v;
