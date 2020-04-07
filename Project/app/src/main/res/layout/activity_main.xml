@@ -35,15 +35,15 @@
 
     <TextView
         android:id="@+id/tt"
-        android:layout_width="251dp"
-        android:layout_height="106dp"
+        android:layout_width="262dp"
+        android:layout_height="238dp"
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="104dp"
         android:background="@null"
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center_horizontal"
-        android:text="COWAR rEcOMMIT "
+        android:text="COWAR"
         android:textColor="#000000"
         android:textSize="65dp"
         app:layout_constraintStart_toStartOf="parent"

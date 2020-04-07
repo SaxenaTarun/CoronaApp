@@ -6,14 +6,19 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.login);
-}
+        FloatingActionButton fab = findViewById(R.id.fab);
 
-    public void nextpage(View view) {
-        Intent home= new Intent(getApplicationContext(),Userhome.class);
-        startActivity( home );
-    }
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Login.this, user_nav.class));
+            }
+        });
+}
 }

@@ -7,16 +7,6 @@
     android:background="#ffffff" >
 
     <ImageView
-        android:id="@+id/full"
-        android:layout_width="410dp"
-        android:layout_height="659dp"
-        android:background="@drawable/user"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
         android:id="@+id/imageView6"
         android:layout_width="0dp"
         android:layout_height="100dp"
@@ -32,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/next"
+        android:id="@+id/textView3"
         android:layout_width="251dp"
         android:layout_height="106dp"
         android:layout_marginStart="80dp"
@@ -44,34 +34,18 @@
         android:text="USER"
         android:textColor="#ffffff"
         android:textSize="65dp"
+        android:onClick="user_nav"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="138dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="404dp"
-        android:onClick="nextpage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView6"
-        app:srcCompat="@drawable/butt1" />
-
-    <TextView
-        android:id="@+id/usr"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif-condensed-medium"
-
-        android:text="Next"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView8" />
-
+        android:clickable="true"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="483dp"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
