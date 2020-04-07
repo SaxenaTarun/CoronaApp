@@ -9,14 +9,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class VolunteerHome extends AppCompatActivity {
+public class VolunteerProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.volunteer_home);
+        setContentView( R.layout.volunteer_profile);
+
+
 
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
 
-        bottomNavigationView.setSelectedItemId(R.id.homeVol);
+        bottomNavigationView.setSelectedItemId(R.id.profileVol);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -25,14 +27,14 @@ public class VolunteerHome extends AppCompatActivity {
                 switch (item.getItemId())
                 {
                     case R.id.profileVol:
-                        startActivity(new Intent(getApplicationContext(),VolunteerProfile.class));
-                        overridePendingTransition(0,0);
                         return true;
                     case R.id.statsVol:
                         startActivity(new Intent(getApplicationContext(),VolunteerStats.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.homeVol:
+                        startActivity(new Intent(getApplicationContext(),VolunteerHome.class));
+                        overridePendingTransition(0,0);
                         return true;
 
                 }
@@ -42,7 +44,5 @@ public class VolunteerHome extends AppCompatActivity {
                 return false;
             }
         });
-
-
     }
 }

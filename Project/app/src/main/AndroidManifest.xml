@@ -12,14 +12,20 @@
         <activity
             android:name=".user_nav"
             android:label="@string/title_activity_user_nav"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
         <activity android:name=".Login" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".page2" />
         <activity android:name=".Userhome" />
         <activity android:name=".VolunteerHome"/>
         <activity android:name=".VolunteerLogin"/>
+        <activity android:name=".RegisterActivityVolunteer"/>
+        <activity android:name=".VolunteerStats"/>
+        <activity android:name=".VolunteerProfile"/>
         <activity android:name=".MainActivity">
+
 
 
             <intent-filter>
