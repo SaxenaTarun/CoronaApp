@@ -22,6 +22,9 @@ public class RegisterActivity extends AppCompatActivity {
 
 
     }
+    public void home(View view) {
+        startActivity(new Intent(RegisterActivity.this, user_nav.class));
+    }
 
 
 
