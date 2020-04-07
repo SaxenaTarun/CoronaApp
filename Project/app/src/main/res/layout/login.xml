@@ -56,7 +56,7 @@
         android:background="@null"
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center_horizontal"
-        android:text="USER"
+        android:text="LOGIN"
         android:textColor="#ffffff"
         android:textSize="65dp"
         android:onClick="user_nav"
