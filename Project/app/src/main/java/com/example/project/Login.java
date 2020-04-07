@@ -11,14 +11,10 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.login);
-        FloatingActionButton fab = findViewById(R.id.fab);
+        setContentView( R.layout.login );
+    }
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Login.this, user_nav.class));
-            }
-        });
-}
+    public void home(View view) {
+        startActivity(new Intent(Login.this, user_nav.class));
+    }
 }
