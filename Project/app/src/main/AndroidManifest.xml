@@ -14,7 +14,9 @@
             android:label="@string/title_activity_user_nav"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Login" />
+        <activity android:name=".RegisterActivity" />
         <activity android:name=".page2" />
+        <activity android:name=".Userhome" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
