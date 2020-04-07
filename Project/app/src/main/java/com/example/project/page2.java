@@ -17,4 +17,10 @@ public class page2 extends AppCompatActivity {
         startActivity( l );
 
     }
+
+    public void VolunteerPage(View view)
+    {
+        Intent vl= new Intent(getApplicationContext(),VolunteerLogin.class);
+        startActivity( vl );
+    }
 }
