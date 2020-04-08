@@ -24,7 +24,7 @@ public class RegisterActivityVolunteer extends AppCompatActivity {
 
 
     public void homeV(View view) {
-        startActivity(new Intent(RegisterActivityVolunteer.this, VolunteerLogin.class));
+        startActivity(new Intent(RegisterActivityVolunteer.this, VolunteerHome.class));
     }
 
 
