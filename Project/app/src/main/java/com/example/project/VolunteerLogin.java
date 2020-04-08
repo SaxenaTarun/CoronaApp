@@ -16,8 +16,8 @@ public class VolunteerLogin extends AppCompatActivity {
 
     public void HomeV(View view)
     {
-        Intent vp= new Intent(getApplicationContext(),VolunteerHome.class);
-        startActivity( vp );
+        Intent vph= new Intent(getApplicationContext(),VolunteerHome.class);
+        startActivity( vph );
     }
 
     public void RegV(View view)
