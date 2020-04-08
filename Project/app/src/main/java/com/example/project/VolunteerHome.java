@@ -3,7 +3,8 @@ package com.example.project;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-
+import android.view.View;
+import android.net.Uri;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -42,6 +43,24 @@ public class VolunteerHome extends AppCompatActivity {
                 return false;
             }
         });
+
+
+    }
+
+    public void site1(View view)
+    {
+        Intent i1 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://ayush.gov.in/covid-19-ayush-volunteers-0"));
+        startActivity(i1);
+
+    }
+
+    public void site2(View view)
+    {
+
+            Intent i2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://self4society.mygov.in/"));
+            startActivity(i2);
+
+
 
 
     }

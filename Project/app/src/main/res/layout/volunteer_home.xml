@@ -98,6 +98,69 @@
         android:text="Join the war against COVID-19"
         android:textColor="#070606"
         android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:layout_marginBottom="336dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:paddingLeft="25sp"
+        android:paddingRight="25sp"
+        android:text="The novel coronavirus is an unfamiliar foe that’s fast reshaping daily routines as schools close, employees work from home, and shared pleasures such as sports games and movie theaters go dark. The upheaval has many people rushing to meet their own needs by stocking up on supplies for potential quarantines. "
+        android:textAlignment="textStart"
+        android:textColor="#090808"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-9dp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="396dp"
+        android:layout_marginBottom="232dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:paddingLeft="25sp"
+        android:paddingRight="25sp"
+        android:text="In this need of hour, our government appreciates even the smalles act of kindness done by people. Reach out to these following pages if you want to help:"
+        android:textAlignment="textStart"
+        android:textColor="#090808"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="509dp"
+        android:layout_marginBottom="165dp"
+        android:background="#60B6EDE8"
+        android:onClick="site1"
+        android:text="AYUSH Organisation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="150dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="561dp"
+        android:layout_marginBottom="113dp"
+        android:background="#60B6EDE8"
+        android:onClick="site2"
+        android:text="iVolunteer Relief Trust"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
