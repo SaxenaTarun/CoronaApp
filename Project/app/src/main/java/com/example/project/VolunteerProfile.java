@@ -1,18 +1,22 @@
 package com.example.project;
 
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-
+import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class VolunteerProfile extends AppCompatActivity {
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.volunteer_profile);
+
 
 
 
@@ -38,11 +42,15 @@ public class VolunteerProfile extends AppCompatActivity {
                         return true;
 
                 }
-
-
-
                 return false;
             }
         });
+
+
+    }
+    public void signO (View view)
+    {
+        Intent vl=new Intent(getApplicationContext(),VolunteerLogin.class);
+        startActivity(vl);
     }
 }

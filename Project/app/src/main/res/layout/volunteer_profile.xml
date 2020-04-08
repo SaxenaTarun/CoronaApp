@@ -5,97 +5,173 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFE2F6F4"
+    android:onClick="signO"
     tools:context=".VolunteerProfile">
-
 
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="657dp"
+        android:gravity="center_horizontal"
         android:text="Profile"
         android:textAlignment="center"
         android:textColor="#0E0D0D"
-        android:textSize="32sp"
-        app:fontFamily="sans-serif-condensed-light"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="25dp" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="95dp"
-        android:layout_marginBottom="479dp"
-        android:background="#FFFFFF"
-        android:text="Maya"
-        android:textAlignment="center"
-        android:textSize="21sp"
+        android:textSize="36sp"
         app:fontFamily="sans-serif-condensed-light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="31dp" />
+        tools:layout_editor_absoluteX="0dp" />
+
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/textView166"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="169dp"
-        android:layout_marginBottom="405dp"
-        android:background="#FFFFFF"
+        android:layout_marginTop="321dp"
+        android:layout_marginBottom="370dp"
+        android:background="#FFE2F6F4"
+        android:gravity="center_horizontal"
         android:text="Computer Engineer"
         android:textAlignment="center"
-        android:textSize="21sp"
-        app:fontFamily="sans-serif-condensed-light"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:fontFamily="sans-serif-thin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/textView116"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="282dp"
+        android:layout_marginBottom="409dp"
+        android:background="#FFE2F6F4"
+        android:text="32"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="19sp"
+        app:fontFamily="sans-serif-thin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat"
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="131dp"
-        android:layout_marginBottom="443dp"
-        android:background="#FFFFFF"
-        android:text="32"
+        android:layout_marginTop="244dp"
+        android:layout_marginBottom="447dp"
+        android:background="#FFE2F6F4"
+        android:text="Maya"
         android:textAlignment="center"
-        android:textSize="21sp"
-        app:fontFamily="sans-serif-condensed-light"
+        android:textColor="#040404"
+        android:textSize="19sp"
+        app:fontFamily="sans-serif-thin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat"
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="251dp"
-        android:layout_marginBottom="321dp"
-        android:text="Your Contributons: "
-        android:textAlignment="center"
+        android:layout_marginTop="397dp"
+        android:layout_marginBottom="289dp"
 
+        android:gravity="left"
+        android:paddingLeft="29dp"
+        android:paddingRight="29dp"
+        android:text="Your Contributons: "
         android:textColor="#090808"
         android:textSize="23sp"
         app:fontFamily="sans-serif-condensed-light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="106dp" />
-
+        tools:layout_editor_absoluteX="0dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="545dp"
-        android:layout_marginBottom="1dp"
+
+        android:layout_marginTop="661dp"
         app:itemBackground="@color/colorPrimaryDark"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/menu_navigation"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="463dp"
+
+        android:background="#00FBF9F9"
+        android:tint="#52AAC1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pro2"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="526dp"
+        android:layout_marginBottom="137dp"
+        android:background="#799DE4"
+        android:gravity="center"
+        android:text="Participated in YouthForLife"
+        android:textColor="#FFE2F6F4"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="456dp"
+        android:layout_marginBottom="206dp"
+        android:background="#799DE4"
+        android:gravity="center"
+        android:text="Donated 20$ to PM cares fund"
+        android:textColor="#FFE2F6F4"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="140dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="603dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:layout_marginBottom="78dp"
+        android:background="#86FFFFFF"
+        android:onClick="signO"
+        android:text="Sign Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
