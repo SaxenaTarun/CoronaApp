@@ -18,13 +18,9 @@
             android:icon="@drawable/heart"
             android:title="@string/menu_map" />
         <item
-        android:id="@+id/nav_prof"
-        android:icon="@drawable/prof"
-        android:title="Edit Profile" />
-
-
-
-
+            android:id="@+id/nav_prof"
+            android:icon="@drawable/prof"
+            android:title="Edit Profile" />
 
     </group>
 </menu>
