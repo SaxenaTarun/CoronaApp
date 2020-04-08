@@ -144,57 +144,50 @@ public class HomeFragment extends Fragment {
 
         return v;
     }
-    void status(View v,int total){
-        if(total<4){
-            ImageView ques=(ImageView) v.findViewById(R.id.question);
-            ques.setVisibility(View.INVISIBLE);
-            ImageView safe=(ImageView) v.findViewById(R.id.safe);
-            safe.setVisibility(View.VISIBLE);
-            ImageView onverge=(ImageView) v.findViewById(R.id.onverge);
-            onverge.setVisibility(View.INVISIBLE);
-            ImageView notsafe=(ImageView) v.findViewById(R.id.notsafe);
-            notsafe.setVisibility(View.INVISIBLE);
-            ImageView danger=(ImageView) v.findViewById(R.id.danger);
-            danger.setVisibility(View.INVISIBLE);
-        }
-        else if((total >4) || (total<11)){
-            ImageView ques=(ImageView) v.findViewById(R.id.question);
-            ques.setVisibility(View.INVISIBLE);
-            ImageView onverge=(ImageView) v.findViewById(R.id.onverge);
-            onverge.setVisibility(View.VISIBLE);
-            ImageView safe=(ImageView) v.findViewById(R.id.safe);
-            safe.setVisibility(View.INVISIBLE);
-            ImageView notsafe=(ImageView) v.findViewById(R.id.notsafe);
-            notsafe.setVisibility(View.INVISIBLE);
-            ImageView danger=(ImageView) v.findViewById(R.id.danger);
-            danger.setVisibility(View.INVISIBLE);
-        }
-        else if((total>11) || (total<14)){
-            ImageView ques=(ImageView) v.findViewById(R.id.question);
-            ques.setVisibility(View.INVISIBLE);
-            ImageView notsafe=(ImageView) v.findViewById(R.id.notsafe);
-            notsafe.setVisibility(View.VISIBLE);
-            ImageView safe=(ImageView) v.findViewById(R.id.safe);
-            safe.setVisibility(View.INVISIBLE);
-            ImageView onverge=(ImageView) v.findViewById(R.id.onverge);
-            onverge.setVisibility(View.INVISIBLE);
-            ImageView danger=(ImageView) v.findViewById(R.id.danger);
-            danger.setVisibility(View.INVISIBLE);
-        }
-        else if(total>14){
-            ImageView ques=(ImageView) v.findViewById(R.id.question);
-            ques.setVisibility(View.INVISIBLE);
-            ImageView danger=(ImageView) v.findViewById(R.id.danger);
-            danger.setVisibility(View.VISIBLE);
-            ImageView safe=(ImageView) v.findViewById(R.id.safe);
-            safe.setVisibility(View.INVISIBLE);
-            ImageView onverge=(ImageView) v.findViewById(R.id.onverge);
-            onverge.setVisibility(View.INVISIBLE);
-            ImageView notsafe=(ImageView) v.findViewById(R.id.notsafe);
-            notsafe.setVisibility(View.INVISIBLE);
-        }
+    private void status(View v,int tot){
+        ImageView ques = v.findViewById(R.id.question);
+        ImageView safe= v.findViewById(R.id.safe);
+        ImageView onverge= v.findViewById(R.id.onverge);
+        ImageView notsafe= v.findViewById(R.id.notsafe);
+        ImageView danger= v.findViewById(R.id.danger);
 
+        if(tot!=0 && tot < 4){
+            ques.setVisibility(View.INVISIBLE);
+            safe.setVisibility(View.VISIBLE);
+            onverge.setVisibility(View.INVISIBLE);
+            notsafe.setVisibility(View.INVISIBLE);
+            danger.setVisibility(View.INVISIBLE);
+        }
+        else if((tot >= 4) && (tot < 9)){
+            ques.setVisibility(View.INVISIBLE);
+            safe.setVisibility(View.INVISIBLE);
+            onverge.setVisibility(View.VISIBLE);
+            notsafe.setVisibility(View.INVISIBLE);
+            danger.setVisibility(View.INVISIBLE);
+        }
+        else if((tot >= 9) && (tot < 14)){
+            ques.setVisibility(View.INVISIBLE);
+            safe.setVisibility(View.INVISIBLE);
+            onverge.setVisibility(View.INVISIBLE);
+            notsafe.setVisibility(View.VISIBLE);
+            danger.setVisibility(View.INVISIBLE);
+        }
+        else if( tot >= 14 ){
+            ques.setVisibility(View.INVISIBLE);
+            safe.setVisibility(View.INVISIBLE);
+            onverge.setVisibility(View.INVISIBLE);
+            notsafe.setVisibility(View.INVISIBLE);
+            danger.setVisibility(View.VISIBLE);
+        } else {
+            //In case of zero or negative total
+            ques.setVisibility(View.VISIBLE);
+            safe.setVisibility(View.INVISIBLE);
+            onverge.setVisibility(View.INVISIBLE);
+            notsafe.setVisibility(View.INVISIBLE);
+            danger.setVisibility(View.INVISIBLE);
+        }
+    }
     }
 
 
-}
+
