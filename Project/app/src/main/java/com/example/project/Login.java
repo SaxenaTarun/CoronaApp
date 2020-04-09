@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.w3c.dom.Text;
 
@@ -26,6 +27,7 @@ public class Login extends AppCompatActivity {
     ImageView login;
     TextView new_reg;
     FirebaseAuth firebaseAuth;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.login );
@@ -36,6 +38,10 @@ public class Login extends AppCompatActivity {
     }
 
     public void home(View view) {
+        if (firebaseAuth.getCurrentUser() != null) {
+            startActivity(new Intent(Login.this, user_nav.class));
+            finish();
+        }
         memail = findViewById(R.id.editText2);
         mpassword = findViewById(R.id.editText3);
 
