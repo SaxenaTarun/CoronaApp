@@ -27,6 +27,9 @@
         <activity android:name=".VolunteerStats"/>
         <activity android:name=".VolunteerProfile"/>
         <activity android:name=".AuthorityLogin"/>
+        <activity android:name=".Organizations" />
+        <activity android:name=".RegisterActivityAuthority" />
+        <activity android:name=".AuthorityHome" />
         <activity android:name=".MainActivity">
 
 
@@ -37,7 +40,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Organizations" />
+
 
     </application>
 

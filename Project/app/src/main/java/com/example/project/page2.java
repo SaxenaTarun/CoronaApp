@@ -23,4 +23,10 @@ public class page2 extends AppCompatActivity {
         Intent vl= new Intent(getApplicationContext(),VolunteerLogin.class);
         startActivity( vl );
     }
+
+    public void AuthorityPage(View view)
+    {
+        Intent al= new Intent(getApplicationContext(),AuthorityLogin.class);
+        startActivity( al );
+    }
 }
