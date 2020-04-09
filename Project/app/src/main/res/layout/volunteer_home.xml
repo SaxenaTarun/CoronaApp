@@ -167,7 +167,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
         android:layout_marginBottom="8dp"
-
+        android:onClick="onYes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/butt3" />
@@ -183,6 +183,7 @@
         android:paddingRight="25sp"
         android:text="Contribute"
         android:textAlignment="center"
+
         android:textColor="#ffffff"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/yes"
@@ -198,7 +199,7 @@
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:layout_marginBottom="8dp"
-
+        android:onClick="onNo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/butt1" />
