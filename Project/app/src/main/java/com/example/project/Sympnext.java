@@ -1,6 +1,9 @@
 package com.example.project;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,4 +34,17 @@ public class Sympnext extends AppCompatActivity {
 
 
 
-    }}
+
+    }
+
+    public void telephone(View view) {
+        Intent tele = new Intent(Intent.ACTION_DIAL);
+        tele.setData( Uri.parse("tel:+91-11-23978046"));
+        startActivity(tele);
+    }
+
+    public void prevent(View view) {
+        Intent pre= new Intent(getApplicationContext(),Prevent.class);
+        startActivity( pre );
+    }
+}

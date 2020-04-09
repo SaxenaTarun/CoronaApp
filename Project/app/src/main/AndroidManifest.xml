@@ -16,6 +16,7 @@
 
         </activity>
         <activity android:name=".Login" />
+        <activity android:name=".Prevent" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".page2" />
         <activity android:name=".Sympnext" />
