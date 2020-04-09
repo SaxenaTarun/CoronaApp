@@ -1,6 +1,7 @@
 package com.example.project.ui.home;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,12 +9,17 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.project.Login;
 import com.example.project.R;
+import com.example.project.RegisterActivity;
+import com.example.project.Sympnext;
+import com.example.project.page2;
 
 public class HomeFragment extends Fragment {
 
@@ -138,6 +144,21 @@ public class HomeFragment extends Fragment {
                 h.setBackgroundColor(getResources().getColor(R.color.colorAccent));
                 c.setBackgroundColor(getResources().getColor(R.color.colorAccent));
                 total=0;
+            }
+        });
+        final TextView check = (TextView) v.findViewById( R.id.textView27);
+        check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(total!=0){
+                    Intent intent = new Intent(getActivity(), Sympnext.class);
+                    intent.putExtra("total",total);
+                    startActivity(intent);
+
+                }
+                else{
+                    Toast.makeText(getActivity(),"No Symptom Checked!",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

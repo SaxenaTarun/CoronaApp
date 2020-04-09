@@ -18,6 +18,7 @@
         <activity android:name=".Login" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".page2" />
+        <activity android:name=".Sympnext" />
         <activity android:name=".Userhome" />
         <activity android:name=".VolunteerHome"/>
         <activity android:name=".VolunteerLogin"/>
