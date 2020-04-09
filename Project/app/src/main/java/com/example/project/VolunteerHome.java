@@ -4,7 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.net.Uri;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -46,22 +47,19 @@ public class VolunteerHome extends AppCompatActivity {
 
 
     }
-
-    public void site1(View view)
+    public void onYes(View view)
     {
-        Intent i1 = new Intent(Intent.ACTION_VIEW, Uri.parse("http://ayush.gov.in/covid-19-ayush-volunteers-0"));
-        startActivity(i1);
+        Intent yes=new Intent(getApplicationContext(),Organizations.class);
+        startActivity(yes);
 
     }
 
-    public void site2(View view)
+    public void onNo(View view)
     {
+        Intent no=new Intent(getApplicationContext(),VolunteerProfile.class);
+        startActivity(no);
 
-            Intent i2 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://self4society.mygov.in/"));
-            startActivity(i2);
-
-
-
+        Toast.makeText(getApplicationContext(),"Thank you for considering to volunteer.\nLogged Out Successfully.",Toast.LENGTH_SHORT).show();
 
     }
 }
