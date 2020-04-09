@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_width="392dp"
+        android:layout_height="76dp"
         android:layout_marginStart="9dp"
         android:layout_marginLeft="9dp"
         android:layout_marginTop="9dp"
@@ -24,20 +24,19 @@
 
     <TextView
         android:id="@+id/textView333"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="403dp"
+        android:layout_height="76dp"
 
-        android:layout_marginTop="9dp"
-        android:layout_marginBottom="620dp"
+        android:layout_marginTop="1dp"
         android:background="@null"
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center_horizontal"
         android:text="VOLUNTEER"
         android:textColor="#ffffff"
         android:textSize="65sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -56,10 +55,8 @@
 
     <TextView
         android:id="@+id/textView19"
-        android:layout_width="match_parent"
-        android:layout_height="51dp"
-        android:layout_marginTop="109dp"
-        android:layout_marginBottom="557dp"
+        android:layout_width="408dp"
+        android:layout_height="39dp"
         android:fontFamily="sans-serif-thin"
         android:gravity="center_horizontal"
         android:paddingLeft="15sp"
@@ -68,115 +65,160 @@
         android:textColor="#084E84"
         android:textSize="15sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="294dp"
+        android:layout_height="347dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/donate" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="104dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:paddingLeft="25sp"
+        android:paddingRight="25sp"
+        android:text="Join the war against COVID-19"
+        android:textAlignment="center"
+        android:textColor="#FFFEFE"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="151dp"
-        android:layout_marginBottom="547dp"
         android:fontFamily="sans-serif-thin"
         android:gravity="center_horizontal"
         android:text="~Oscar Wilde"
         android:textColor="#084E84"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="191dp"
-        android:layout_marginBottom="502dp"
-        android:fontFamily="sans-serif-condensed-light"
-        android:gravity="center_horizontal"
-        android:text="Join the war against COVID-19"
-        android:textColor="#070606"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
         tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="271dp"
-        android:layout_marginBottom="358dp"
-        android:fontFamily="sans-serif-condensed-light"
+        android:layout_marginBottom="428dp"
+        android:fontFamily="sans-serif-condensed"
         android:gravity="center"
         android:paddingLeft="25sp"
         android:paddingRight="25sp"
         android:text="COVID-19 is an unfamiliar foe that’s reshaping our daily routines. This upheavel has rendered many people helpess."
-        android:textAlignment="textStart"
+        android:textAlignment="center"
         android:textColor="#090808"
-        android:textSize="18sp"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-9dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="416dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/butt2" />
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="364dp"
-        android:layout_marginBottom="329dp"
-        android:fontFamily="sans-serif-condensed-light"
+        android:layout_width="297dp"
+        android:layout_height="116dp"
+        android:fontFamily="sans-serif-condensed"
         android:gravity="center"
         android:paddingLeft="25sp"
+
         android:paddingRight="25sp"
         android:text="To help such people, many organizations have been setup. Extend your hand to such organizations by volunteering for work that suits you."
-        android:textAlignment="textStart"
-        android:textColor="#090808"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.387"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/yes"
+        android:layout_width="157dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="8dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/butt3" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="103dp"
+        android:layout_height="46dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:onClick="onYes"
+        android:paddingLeft="25sp"
+        android:paddingRight="25sp"
+        android:text="YES"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/yes"
+        app:layout_constraintStart_toStartOf="@+id/yes"
+        app:layout_constraintTop_toTopOf="@+id/yes"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/no"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/butt1" />
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginBottom="85dp"
-        android:text="Yes, I'm Interested"
-        android:onClick="onYes"
-        android:textColor="#423636"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintEnd_toStartOf="@+id/textView30"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        android:layout_width="103dp"
+        android:layout_height="46dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
 
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="115dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginRight="64dp"
-        android:layout_marginBottom="85dp"
-        android:text="No, Go Back"
-        android:textColor="#3B3030"
-        android:textSize="18sp"
+        android:paddingLeft="25sp"
+        android:paddingRight="25sp"
+        android:text="NO"
         android:onClick="onNo"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView29"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/no"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/no"
+        app:layout_constraintTop_toTopOf="@+id/no"
+        tools:ignore="RtlCompat" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
