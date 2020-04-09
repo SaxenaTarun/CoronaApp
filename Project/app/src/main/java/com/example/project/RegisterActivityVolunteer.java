@@ -115,7 +115,7 @@ public class RegisterActivityVolunteer extends AppCompatActivity {
                                 }
                             });
                     Toast.makeText(RegisterActivityVolunteer.this, "user created Successfully", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(RegisterActivityVolunteer.this, user_nav.class));
+                    startActivity(new Intent(RegisterActivityVolunteer.this, VolunteerHome.class));
                 } else {
                     Toast.makeText(RegisterActivityVolunteer.this, "Error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
