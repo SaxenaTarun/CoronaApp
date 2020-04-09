@@ -161,7 +161,7 @@
         android:layout_marginTop="328dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:onClick="RegA"
-        android:text="New User? Register"
+        android:text="New User?Register"
         android:textColor="#0478FF"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"

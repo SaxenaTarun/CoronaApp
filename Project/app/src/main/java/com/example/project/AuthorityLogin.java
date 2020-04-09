@@ -37,7 +37,7 @@ public class AuthorityLogin extends AppCompatActivity {
 
     public void RegA(View view)
     {
-        Intent aReg= new Intent(getApplicationContext(),RegisterActivityAuthority.class);
-        startActivity( aReg );
+        Intent Reg= new Intent(getApplicationContext(),RegisterActivityAuthority.class);
+        startActivity( Reg );
     }
 }
