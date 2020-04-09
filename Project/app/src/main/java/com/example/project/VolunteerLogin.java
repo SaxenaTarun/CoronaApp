@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -31,13 +32,13 @@ public class VolunteerLogin extends AppCompatActivity {
 //        Intent vph= new Intent(getApplicationContext(),VolunteerHome.class);
 //        startActivity( vt(getApplicationContext(),VolunteerHome.class);
 //        startActivity( vph );
-        if (firebaseAuth.getCurrentUser() != null) {
-            startActivity(new Intent(VolunteerLogin.this, VolunteerHome.class));
-            finish();
-        }
+//        if (firebaseAuth.getCurrentUser() != null) {
+//            startActivity(new Intent(VolunteerLogin.this, VolunteerHome.class));
+//            finish();
+//        }
         vemail = findViewById(R.id.editText2);
         vpassword = findViewById(R.id.editText3);
-
+        final ProgressBar progressBar = findViewById(R.id.progressBar2);
 //        firebaseAuth.getInstance();
         boolean flag = false;
 
@@ -56,14 +57,17 @@ public class VolunteerLogin extends AppCompatActivity {
             return;
         }
 //        authenticate user
+        progressBar.setVisibility(View.VISIBLE);
         firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+                    progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(getApplicationContext(),"Login Successfully",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), VolunteerHome.class));
                 }
                 else {
+                    progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(getApplicationContext(),"Error"+task.getException().getMessage(),Toast.LENGTH_SHORT ).show();
                 }
             }

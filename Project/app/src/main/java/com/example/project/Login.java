@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ public class Login extends AppCompatActivity {
     TextView new_reg;
     FirebaseAuth firebaseAuth;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.login );
@@ -38,14 +40,13 @@ public class Login extends AppCompatActivity {
     }
 
     public void home(View view) {
-        if (firebaseAuth.getCurrentUser() != null) {
-            startActivity(new Intent(Login.this, user_nav.class));
-            finish();
-        }
+//        if (firebaseAuth.getCurrentUser() != null) {
+//            startActivity(new Intent(Login.this, user_nav.class));
+//            finish();
+//        }
         memail = findViewById(R.id.editText2);
         mpassword = findViewById(R.id.editText3);
-
-//        firebaseAuth.getInstance();
+        final ProgressBar progressBar = findViewById(R.id.progressBar2);
         boolean flag = false;
 
         String email = memail.getText().toString().trim();
@@ -62,24 +63,26 @@ public class Login extends AppCompatActivity {
             mpassword.setError("Password is too short");
             return;
         }
+
+        progressBar.setVisibility(View.VISIBLE);
 //        authenticate user
         firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+
+                    progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(Login.this,"Login Successfully",Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), user_nav.class));
                 }
                 else {
+
+                    progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(Login.this,"Error"+task.getException().getMessage(),Toast.LENGTH_SHORT ).show();
                 }
             }
         });
 
-
-//        if(flag){
-//        startActivity(new Intent(Login.this, user_nav.class));
-//        }
     }
 
     public void register(View view) {
