@@ -119,16 +119,17 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-
+        android:layout_width="178dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal"
         android:text="Updates"
+        android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView10" />
 

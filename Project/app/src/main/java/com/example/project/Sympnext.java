@@ -32,9 +32,6 @@ public class Sympnext extends AppCompatActivity {
             dis.setText( display );
         }
 
-
-
-
     }
 
     public void telephone(View view) {
@@ -42,9 +39,11 @@ public class Sympnext extends AppCompatActivity {
         tele.setData( Uri.parse("tel:+91-11-23978046"));
         startActivity(tele);
     }
-
     public void prevent(View view) {
-        Intent pre= new Intent(getApplicationContext(),Prevent.class);
+        Intent pre= new Intent(getApplication(),Prevent.class);
         startActivity( pre );
     }
+
+
+
 }
