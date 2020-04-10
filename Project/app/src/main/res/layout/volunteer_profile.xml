@@ -4,96 +4,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFE2F6F4"
+    android:background="#ffffff"
     android:onClick="signO"
     tools:context=".VolunteerProfile">
 
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="305dp"
+        android:layout_height="82dp"
+        android:onClick="signO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:srcCompat="@drawable/butt2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@drawable/block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView15"
-        android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="657dp"
+        android:id="@+id/textView3"
+        android:layout_width="251dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center_horizontal"
-        android:text="Profile"
-        android:textAlignment="center"
-        android:textColor="#0E0D0D"
-        android:textSize="36sp"
-        app:fontFamily="sans-serif-condensed-light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        android:text="PROFILE"
+        android:textColor="#ffffff"
+        android:textSize="65dp"
 
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView166"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="321dp"
-        android:layout_marginBottom="370dp"
-        android:background="#FFE2F6F4"
-        android:gravity="center_horizontal"
-        android:text="Computer Engineer"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="19sp"
-        app:fontFamily="sans-serif-thin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-16dp" />
-
-    <TextView
-        android:id="@+id/textView116"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="282dp"
-        android:layout_marginBottom="409dp"
-        android:background="#FFE2F6F4"
-        android:text="32"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="19sp"
-        app:fontFamily="sans-serif-thin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="RtlCompat"
-        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="244dp"
-        android:layout_marginBottom="447dp"
-        android:background="#FFE2F6F4"
+
+        android:layout_marginTop="8dp"
         android:text="Maya"
         android:textAlignment="center"
-        android:textColor="#040404"
+        android:textColor="#ffffff"
         android:textSize="19sp"
-        app:fontFamily="sans-serif-thin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="RtlCompat"
-        tools:layout_editor_absoluteX="0dp" />
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textView166"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Organisation"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="19sp"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="397dp"
-        android:layout_marginBottom="289dp"
 
-        android:gravity="left"
+        android:gravity="center"
         android:paddingLeft="29dp"
         android:paddingRight="29dp"
         android:text="Your Contributons: "
         android:textColor="#090808"
         android:textSize="23sp"
         app:fontFamily="sans-serif-condensed-light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
         tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#039BE5"
+        android:gravity="center"
+        android:text="Participated in YouthForLife"
+        android:textColor="#FFE2F6F4"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#039BE5"
+        android:gravity="center"
+        android:text="Donated 20$ to PM cares fund"
+        android:textColor="#FFE2F6F4"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -101,77 +133,49 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
 
-        android:layout_marginTop="661dp"
         app:itemBackground="@color/colorPrimaryDark"
         app:itemIconTint="@drawable/selector"
         app:itemTextColor="@drawable/selector"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:menu="@menu/menu_navigation"
         tools:layout_editor_absoluteX="-16dp" />
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="match_parent"
-        android:layout_height="194dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="463dp"
+        android:layout_width="308dp"
+        android:layout_height="120dp"
 
         android:background="#00FBF9F9"
-        android:tint="#52AAC1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pro2"
-        tools:layout_editor_absoluteX="15dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/organisation" />
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:layout_marginTop="526dp"
-        android:layout_marginBottom="137dp"
-        android:background="#799DE4"
-        android:gravity="center"
-        android:text="Participated in YouthForLife"
-        android:textColor="#FFE2F6F4"
-        android:textSize="20sp"
-        app:fontFamily="sans-serif-condensed-light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="30dp" />
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginTop="456dp"
-        android:layout_marginBottom="206dp"
-        android:background="#799DE4"
-        android:gravity="center"
-        android:text="Donated 20$ to PM cares fund"
-        android:textColor="#FFE2F6F4"
-        android:textSize="20sp"
-        app:fontFamily="sans-serif-condensed-light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="30dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="140dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginLeft="136dp"
-        android:layout_marginTop="603dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginRight="136dp"
-        android:layout_marginBottom="78dp"
-        android:background="#86FFFFFF"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="125dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="12dp"
         android:onClick="signO"
-        android:text="Sign Out"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        app:srcCompat="@drawable/buttonblue" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Sign Out"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

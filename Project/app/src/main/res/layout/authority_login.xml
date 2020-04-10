@@ -117,11 +117,10 @@
         android:layout_width="181dp"
         android:layout_height="61dp"
 
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
         app:srcCompat="@drawable/buttonblue" />
 
     <TextView
@@ -143,31 +142,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="sans-serif-condensed-medium"
+        android:onClick="HomeA"
         android:text="Submit"
         android:textColor="#ffffff"
         android:textSize="25dp"
-        android:onClick="HomeA"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <TextView
-        android:id="@+id/textView88"
-        android:layout_width="122dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="328dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:onClick="RegA"
-        android:text="New User?Register"
-        android:textColor="#0478FF"
-        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="189dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal"
+        android:onClick="rega"
+        android:text="New User? Register"
+        android:textAlignment="center"
+        android:textColor="#0478FF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <TextView
         android:id="@+id/textView7"

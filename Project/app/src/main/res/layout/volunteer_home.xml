@@ -73,9 +73,9 @@
         android:id="@+id/imageView5"
         android:layout_width="294dp"
         android:layout_height="347dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="100dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView25"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/donate" />
@@ -84,7 +84,7 @@
         android:id="@+id/textView33"
         android:layout_width="104dp"
         android:layout_height="71dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:fontFamily="sans-serif-condensed"
@@ -112,27 +112,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textView19"
         tools:layout_editor_absoluteX="0dp" />
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="428dp"
-        android:fontFamily="sans-serif-condensed"
-        android:gravity="center"
-        android:paddingLeft="25sp"
-        android:paddingRight="25sp"
-        android:text="COVID-19 is an unfamiliar foe that’s reshaping our daily routines. This upheavel has rendered many people helpess."
-        android:textAlignment="center"
-        android:textColor="#090808"
-        android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="416dp"
-        android:layout_height="126dp"
+        android:layout_width="403dp"
+        android:layout_height="166dp"
         android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toTopOf="@+id/no"
         app:layout_constraintEnd_toEndOf="parent"
@@ -142,14 +125,14 @@
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="297dp"
-        android:layout_height="116dp"
+        android:layout_width="335dp"
+        android:layout_height="164dp"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
         android:paddingLeft="25sp"
 
         android:paddingRight="25sp"
-        android:text="To help such people, many organizations have been setup. Extend your hand to such organizations by volunteering for work that suits you."
+        android:text="COVID-19 is an unfamiliar foe that’s reshaping our daily routines. This upheavel has rendered many people helpess.To help such people, many organizations have been setup. Extend your hand to such organizations by volunteering for work that suits you."
         android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="18sp"
@@ -157,7 +140,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.387"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="RtlCompat" />
 
     <ImageView
