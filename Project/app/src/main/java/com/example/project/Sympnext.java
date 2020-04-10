@@ -45,5 +45,7 @@ public class Sympnext extends AppCompatActivity {
     }
 
 
+    public void Goo(View view) {
 
+    }
 }

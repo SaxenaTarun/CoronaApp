@@ -125,6 +125,7 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center_horizontal"
         android:text="Updates"
+        android:onClick="Goo"
         android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="30dp"
