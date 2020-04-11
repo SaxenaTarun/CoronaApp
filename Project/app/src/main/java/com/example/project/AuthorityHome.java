@@ -43,6 +43,11 @@ public class AuthorityHome extends AppCompatActivity {
 //                }
 //            }
 //        });
+
+/* ________________________________________________________________________
+This bottom navigation code is crashing app like anything please do something of this !
+_________________________________________________________________________________
+*/
 //        BottomNavigationView bottomNavigationView1=findViewById(R.id.bottom_navigation);
 //
 //        bottomNavigationView1.setSelectedItemId(R.id.homeVol);
