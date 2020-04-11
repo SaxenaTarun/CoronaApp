@@ -20,18 +20,20 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="247dp"
-        android:layout_height="39dp"
+        android:layout_width="388dp"
+        android:layout_height="32dp"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Please fill in the details"
         android:textColor="#C036383A"
         android:textSize="25dp"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
         tools:ignore="HardcodedText,SpUsage"
-        tools:targetApi="jelly_bean" />
+        tools:targetApi="jelly_bean"
+        android:gravity="center_horizontal" />
 
 
     <ImageView

@@ -31,7 +31,7 @@ public class RegisterActivityAuthority extends AppCompatActivity {
 
         Spinner spin=findViewById(R.id.spinner);
         String y = String.valueOf(spin.getSelectedItem());
-        
+
     }
 
 
