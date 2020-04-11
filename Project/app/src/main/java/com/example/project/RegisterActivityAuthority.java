@@ -36,7 +36,7 @@ import java.util.Map;
 
 public class RegisterActivityAuthority extends AppCompatActivity {
     public static final String TAG = "RegisterActivityVolunteerJava";
-    EditText aname, aage, aemail_phone, apass;
+    EditText aname, aage, aemail_phone, apass,workplace;
     //    EditText aphone;
     FirebaseAuth firebaseAuth;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -70,11 +70,14 @@ public class RegisterActivityAuthority extends AppCompatActivity {
         aage = findViewById(R.id.editText);
         aemail_phone = findViewById(R.id.editText2);
         apass = findViewById(R.id.editText3);
+        workplace = findViewById(R.id.editText5);
 //           arphone = findViewById(R.id.)
         final String name = aname.getText().toString();
         final String age = aage.getText().toString();
         final String email = aemail_phone.getText().toString().trim();
         final String password = apass.getText().toString().trim();
+        final String place;
+        place = workplace.getText().toString();
         Spinner spin=findViewById(R.id.spinner);
         final String y = String.valueOf(spin.getSelectedItem());
         if (TextUtils.isEmpty(name)) {
@@ -119,6 +122,7 @@ public class RegisterActivityAuthority extends AppCompatActivity {
 //                        user.put("Phone",phone)
                     user.put("role","Authority");
                     user.put("occupation",y);
+                    user.put("workpalce",place);
                     db.collection("")
                             .add(user)
                             .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
