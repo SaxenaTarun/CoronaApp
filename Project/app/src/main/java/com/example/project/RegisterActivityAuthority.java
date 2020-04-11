@@ -10,17 +10,26 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class RegisterActivityAuthority extends AppCompatActivity {
-
+    public static final String TAG = "RegisterActivityVolunteerJava";
+    EditText vname, aage, aemail, apass;
+    //    EditText aphone;
+    FirebaseAuth firebaseAuth;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    String userid;
 
 
 
@@ -31,7 +40,10 @@ public class RegisterActivityAuthority extends AppCompatActivity {
 
         Spinner spin=findViewById(R.id.spinner);
         String y = String.valueOf(spin.getSelectedItem());
-        
+
+
+        firebaseAuth = FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
     }
 
 
