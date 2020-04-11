@@ -43,6 +43,7 @@
 
         </activity>
         <activity android:name=".Login" />
+        <activity android:name=".Data" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".page2" />
         <activity android:name=".Sympnext" />
