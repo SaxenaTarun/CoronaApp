@@ -275,19 +275,19 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="83dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="141dp"
-        android:layout_marginLeft="141dp"
-        android:layout_marginEnd="183dp"
-        android:layout_marginRight="183dp"
-        android:layout_marginBottom="284dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="113dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+
+
+        android:entries="@array/occ"
+        android:textAlignment="center"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.32" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <CheckBox
         android:id="@+id/checkBox"

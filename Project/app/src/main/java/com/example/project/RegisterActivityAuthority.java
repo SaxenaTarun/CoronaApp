@@ -23,24 +23,15 @@ public class RegisterActivityAuthority extends AppCompatActivity {
 
 
 
-    @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.authority_register);
 
 
         Spinner spin=findViewById(R.id.spinner);
-        spin.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
-        List<String> occ=new ArrayList<>();
-        occ.add("Doctor");
-        occ.add("Medical Staff");
-        occ.add("Civil Servant");
-        occ.add("Police");
-        occ.add("Other");
-
-        ArrayAdapter<String> dataAdapter= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, occ);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spin.setAdapter(dataAdapter);
+        String y = String.valueOf(spin.getSelectedItem());
+        
     }
 
 

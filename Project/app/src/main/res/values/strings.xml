@@ -13,6 +13,16 @@
     <string name="menu_map">Contribute</string>
 
     <string name="home_second">Home Second</string>
+    <string-array name="occ">
+        <item>Select</item>
+        <item>Doctor</item>
+        <item>Medical Staff</item>
+        <item>Civil Servant</item>
+        <item>Police</item>
+        <item>Others</item>
+
+
+    </string-array>
 
 
 </resources>
