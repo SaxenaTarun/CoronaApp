@@ -1,6 +1,5 @@
 package com.example.project;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 
@@ -30,24 +29,22 @@ import java.util.Map;
 
 
 public class RegisterActivityVolunteer extends AppCompatActivity {
-    public static final String TAG = "RegisterActivityVolunteerJava";
-    EditText vname, vage, vemail, vpass;
-//    EditText vphone;
+
+    public static final String TAG = "RegActVolJava";
+    EditText rname, rage, remail, rpass;
+    EditText rphone;
     FirebaseAuth firebaseAuth;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     String userid;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.volunteer_register);
 
+
         firebaseAuth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
-
-
     }
-
 
     public void homeV(View view) {
         if (firebaseAuth.getCurrentUser() != null) {
@@ -55,32 +52,32 @@ public class RegisterActivityVolunteer extends AppCompatActivity {
             finish();
         }
         final boolean[] flag = {false};
-        vname = findViewById(R.id.editText4);
-        vage = findViewById(R.id.editText);
-        vemail = findViewById(R.id.editText2);
-        vpass = findViewById(R.id.editText3);
+        rname = findViewById(R.id.editText4);
+        rage = findViewById(R.id.editText);
+        remail = findViewById(R.id.editText2);
+        rpass = findViewById(R.id.editText3);
 //            rphone = findViewById(R.id.)
-        final String name = vname.getText().toString();
-        final String age = vage.getText().toString();
-        final String email = vemail.getText().toString().trim();
-        final String password = vpass.getText().toString().trim();
+        final String name = rname.getText().toString();
+        final String age = rage.getText().toString();
+        final String email = remail.getText().toString().trim();
+        final String password = rpass.getText().toString().trim();
         if (TextUtils.isEmpty(name)) {
-            vname.setError("Name field is empty");
+            rname.setError("Name field is empty");
         }
         if (TextUtils.isEmpty(email)) {
-            vemail.setError("Email field is Empty");
+            remail.setError("Email field is Empty");
         }
         if (TextUtils.isEmpty(password)) {
-            vpass.setError("Password is empty");
+            rpass.setError("Password is empty");
         }
-        if (password.length() < 8) {
-            vpass.setError("Password in less than 8");
+        if (password.length() < 6) {
+            rpass.setError("Password in less than 6");
         }
         if (TextUtils.isEmpty(age)) {
-            vage.setError("Age Field is Empty");
+            rage.setError("Age Field is Empty");
         }
 //            if(TextUtils.isEmpty(phone)){
-//                vphone.setError("Phone field is Empty");
+//                rphone.setError("Phone field is Empty");
 //            }
         // Register user in firebase
 
@@ -88,34 +85,32 @@ public class RegisterActivityVolunteer extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    System.out.println("created Volunter");
+                    System.out.println("created volunteer");
                     userid = firebaseAuth.getCurrentUser().getUid();
-                    DocumentReference documentReference = db.collection("volunteers").document(userid);
+                    DocumentReference documentReference = db.collection("users").document(userid);
                     Map<String, Object> user = new HashMap<>();
                     user.put("fullname",name);
                     user.put("age",age);
                     user.put("email",email);
 //                        user.put("Phone",phone)
-                    user.put("role","volunteer");
+                    user.put("role","user");
 
-                    db.collection("volunteers")
+                    db.collection("volunteer")
                             .add(user)
                             .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                                @SuppressLint("LongLogTag")
                                 @Override
                                 public void onSuccess(DocumentReference documentReference) {
                                     Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
                                 }
                             })
                             .addOnFailureListener(new OnFailureListener() {
-                                @SuppressLint("LongLogTag")
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
                                     Log.w(TAG, "Error adding document", e);
                                 }
                             });
                     Toast.makeText(RegisterActivityVolunteer.this, "user created Successfully", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(RegisterActivityVolunteer.this, VolunteerHome.class));
+                    startActivity(new Intent(RegisterActivityVolunteer.this, user_nav.class));
                 } else {
                     Toast.makeText(RegisterActivityVolunteer.this, "Error" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
 
@@ -123,8 +118,7 @@ public class RegisterActivityVolunteer extends AppCompatActivity {
             }
         });
     }
-
-
-
-
 }
+
+
+

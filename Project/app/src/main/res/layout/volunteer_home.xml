@@ -159,7 +159,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="84dp"
         android:onClick="onYes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -167,8 +167,8 @@
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="144dp"
-        android:layout_height="52dp"
+        android:layout_width="149dp"
+        android:layout_height="41dp"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
         android:onClick="onYes"
@@ -181,6 +181,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/yes"
         app:layout_constraintEnd_toEndOf="@+id/yes"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="@+id/yes"
         app:layout_constraintTop_toTopOf="@+id/yes"
         app:layout_constraintVertical_bias="1.0"
