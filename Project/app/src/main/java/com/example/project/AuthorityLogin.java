@@ -30,10 +30,10 @@ public class AuthorityLogin extends AppCompatActivity {
 
     public void HomeA(View view)
     {
-        if (firebaseAuth.getCurrentUser() != null) {
-            startActivity(new Intent(AuthorityLogin.this, AuthorityHome.class));
-            finish();
-        }
+//        if (firebaseAuth.getCurrentUser() != null) {
+//            startActivity(new Intent(AuthorityLogin.this, AuthorityHome.class));
+//            finish();
+//        }
         aemail = findViewById(R.id.editText2);
         apassword = findViewById(R.id.editText3);
         final ProgressBar progressBar = findViewById(R.id.progressBar2);

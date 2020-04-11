@@ -50,10 +50,10 @@ public class RegisterActivityVolunteer extends AppCompatActivity {
 
 
     public void homeV(View view) {
-        if (firebaseAuth.getCurrentUser() != null) {
-            startActivity(new Intent(RegisterActivityVolunteer.this, VolunteerHome.class));
-            finish();
-        }
+//        if (firebaseAuth.getCurrentUser() != null) {
+//            startActivity(new Intent(RegisterActivityVolunteer.this, VolunteerHome.class));
+//            finish();
+//        }
         final boolean[] flag = {false};
         vname = findViewById(R.id.editText4);
         vage = findViewById(R.id.editText);
@@ -82,7 +82,7 @@ public class RegisterActivityVolunteer extends AppCompatActivity {
 //            if(TextUtils.isEmpty(phone)){
 //                vphone.setError("Phone field is Empty");
 //            }
-        // Register user in firebase
+        // Register volunteer in firebase
 
         firebaseAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
