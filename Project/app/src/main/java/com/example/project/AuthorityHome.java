@@ -89,4 +89,8 @@ public class AuthorityHome extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),"Thank you for considering to volunteer.\nLogged Out Successfully.",Toast.LENGTH_SHORT).show();
 
     }
+    public void vd(View view){
+        Intent vd = new Intent(getApplicationContext(),Data.class);
+        startActivity(vd);
+    }
 }
