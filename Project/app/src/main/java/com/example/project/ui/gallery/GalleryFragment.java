@@ -25,6 +25,8 @@ public class GalleryFragment extends Fragment implements OnMapReadyCallback {
     SupportMapFragment mapFragment;
     public GalleryFragment(){
 
+
+
     }
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -50,6 +52,14 @@ public class GalleryFragment extends Fragment implements OnMapReadyCallback {
         map.addMarker(new MarkerOptions().position(home)
                 .title("Marker in Home"));
         map.moveCamera( CameraUpdateFactory.newLatLng(home));
+
+
+
+
+
+
+
+
     }
     
 

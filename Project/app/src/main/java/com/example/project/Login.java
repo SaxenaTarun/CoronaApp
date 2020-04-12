@@ -73,7 +73,7 @@ public class Login extends AppCompatActivity {
 
                     progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(Login.this,"Login Successfully",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(), user_nav.class));
+                    startActivity(new Intent(getApplicationContext(), Userhome.class));
                 }
                 else {
 

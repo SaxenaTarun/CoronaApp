@@ -94,7 +94,7 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:text="MapCheck"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView9" />
