@@ -24,7 +24,7 @@ public class Data extends AppCompatActivity {
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.data);
+        setContentView( R.layout.datalayout);
 
         db.collection("users")
                 .get()

@@ -43,7 +43,6 @@
 
         </activity>
         <activity android:name=".Login" />
-        <activity android:name=".Data" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".page2" />
         <activity android:name=".Sympnext" />
@@ -58,6 +57,8 @@
         <activity android:name=".Organizations" />
         <activity android:name=".RegisterActivityAuthority" />
         <activity android:name=".AuthorityHome" />
+        <activity android:name=".Data" />
+
         <activity android:name=".MainActivity">
 
 
