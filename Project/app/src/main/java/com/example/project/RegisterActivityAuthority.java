@@ -83,17 +83,17 @@ public class RegisterActivityAuthority extends AppCompatActivity {
         if (TextUtils.isEmpty(name)) {
             aname.setError("Name field is empty");
         }
-//        if (TextUtils.isEmpty(email)) {
-//            aemail_phone.setError("Email field is Empty");
-//        }
-        if(TextUtils.isDigitsOnly(email) || TextUtils.isEmpty(email)){
-            if(email.length() != 10 && TextUtils.isDigitsOnly(email)){
-                aemail_phone.setError("Phone no can't be greater than 10 digits");
-            }
-            if(TextUtils.isEmpty(email)){
-                aemail_phone.setError(("Email field is Empty"));
-            }
+        if (TextUtils.isEmpty(email)) {
+            aemail_phone.setError("Email field is Empty");
         }
+//        if(TextUtils.isDigitsOnly(email) || TextUtils.isEmpty(email)){
+//            if(email.length() != 10 && TextUtils.isDigitsOnly(email)){
+//                aemail_phone.setError("Phone no can't be greater than 10 digits");
+//            }
+//            if(TextUtils.isEmpty(email)){
+//                aemail_phone.setError(("Email field is Empty"));
+//            }
+//        }
         if (TextUtils.isEmpty(password)) {
             apass.setError("Password is empty");
         }

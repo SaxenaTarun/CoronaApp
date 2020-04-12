@@ -256,7 +256,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="376dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Email/Phone"
+        android:text="Email"
         android:textColor="#0478FF"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
