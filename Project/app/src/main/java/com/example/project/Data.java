@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Data extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.data);
+        setContentView( R.layout.datalayout);
 
 
     }
