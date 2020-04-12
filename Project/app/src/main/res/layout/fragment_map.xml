@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:name="com.google.android.gms.maps.SupportMapFragment"
-    tools:context="com.example.project.ui.gallery.GalleryFragment" >
+    tools:context="com.example.project.ui.gallery.GalleryFragment">
     <com.google.android.gms.maps.MapView
         android:id="@+id/map_view"
         android:layout_width="match_parent"
