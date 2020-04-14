@@ -12,6 +12,7 @@
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/pin"
+            android:onClick=""
             android:title="@string/menu_sym" />
         <item
             android:id="@+id/nav_slideshow"
