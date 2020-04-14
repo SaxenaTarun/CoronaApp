@@ -25,10 +25,12 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     int total=0;
+    private long mLastClickTime = 0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {   final View v = inflater.inflate(R.layout.fragment_symp, null);
+
 
 
 
