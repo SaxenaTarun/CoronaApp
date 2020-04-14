@@ -131,4 +131,14 @@ public class Userhome extends AppCompatActivity {
             }
         }
     }
+
+    public void check(View view) {
+        Intent ch=new Intent(getApplicationContext(),Sympcheck.class);
+        startActivity(ch);
+    }
+
+    public void preventhome(View view) {
+        Intent ph=new Intent(getApplicationContext(),Prevent.class);
+        startActivity(ph);
+    }
 }

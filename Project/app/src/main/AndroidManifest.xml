@@ -49,6 +49,7 @@
         <activity android:name=".page2" />
         <activity android:name=".Sympnext" />
         <activity android:name=".Userhome" />
+        <activity android:name=".Sympcheck"/>
         <activity android:name=".Prevent" />
         <activity android:name=".VolunteerHome"/>
         <activity android:name=".VolunteerLogin"/>

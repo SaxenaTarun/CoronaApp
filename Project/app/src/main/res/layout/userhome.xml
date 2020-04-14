@@ -74,7 +74,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:onClick="check"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Symptoms"
@@ -90,7 +90,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-
         android:fontFamily="sans-serif-condensed-medium"
         android:text="MapCheck"
         android:textColor="#ffffff"
@@ -109,18 +108,19 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:id="@+id/pc"
+        android:layout_width="164dp"
+        android:layout_height="77dp"
 
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Contribute"
+        android:gravity="center_horizontal"
+        android:onClick="preventhome"
+        android:text="Prevention Controls"
         android:textColor="#ffffff"
         android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
         app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
