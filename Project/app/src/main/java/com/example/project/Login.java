@@ -1,6 +1,5 @@
 package com.example.project;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -16,12 +15,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
-
-import org.w3c.dom.Text;
 
 public class Login extends AppCompatActivity {
     EditText memail,mpassword;
@@ -73,7 +69,7 @@ public class Login extends AppCompatActivity {
 
                     progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(Login.this,"Login Successfully",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(), Userhome.class));
+                        startActivity(new Intent(getApplicationContext(), Userhome.class));
                 }
                 else {
 

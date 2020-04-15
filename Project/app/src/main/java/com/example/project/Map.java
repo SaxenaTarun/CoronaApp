@@ -1,5 +1,5 @@
+package com.example.project;
 
-package com.example.project.ui.gallery;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.project.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -17,19 +16,16 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class GalleryFragment extends Fragment implements OnMapReadyCallback {
-
+public class Map extends Fragment implements OnMapReadyCallback{
     SupportMapFragment mapFragment;
-    public GalleryFragment(){
-
-
+    public Map(){
 
     }
-    @Override
+
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
     }
-    @Override
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -45,20 +41,11 @@ public class GalleryFragment extends Fragment implements OnMapReadyCallback {
         return v;
     }
 
+    @Override
     public void onMapReady(GoogleMap map) {
         LatLng home = new LatLng(30.212340, 75.695005);
         map.addMarker(new MarkerOptions().position(home)
                 .title("Marker in Home"));
         map.moveCamera( CameraUpdateFactory.newLatLng(home));
 
-
-
-
-
-
-
-
-    }
-    
-
-}
+    }}

@@ -7,7 +7,6 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
@@ -15,7 +14,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import com.example.project.ui.gallery.GalleryFragment;
+
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -29,19 +28,11 @@ public class Userhome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView( R.layout.userhome);
 
-        fetch=findViewById(R.id.textView5);
+
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
-    fetch.setOnClickListener(new View.OnClickListener() {
-        @Override
 
-        public void onClick(View v) {
-
-            fetchLocation();
-
-        }
-    });
 
     }
 
@@ -140,5 +131,9 @@ public class Userhome extends AppCompatActivity {
     public void preventhome(View view) {
         Intent ph=new Intent(getApplicationContext(),Prevent.class);
         startActivity(ph);
+    }
+    public void ma(View view) {
+        Intent mp=new Intent(getApplicationContext(),Map.class);
+        startActivity(mp);
     }
 }
