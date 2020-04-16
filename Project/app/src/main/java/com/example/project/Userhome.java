@@ -93,7 +93,7 @@ public class Userhome extends AppCompatActivity {
 
                             if (location != null) {
                                 //User ka longitude and latitude are stored here
-                                
+
                                 Double latitude=location.getLatitude();
                                 Double longitude=location.getLongitude();
 

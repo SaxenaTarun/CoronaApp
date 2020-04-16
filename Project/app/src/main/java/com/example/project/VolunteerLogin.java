@@ -25,6 +25,9 @@ public class VolunteerLogin extends AppCompatActivity {
         setContentView( R.layout.volunteer_login);
 
         firebaseAuth = FirebaseAuth.getInstance();
+
+
+
     }
 
     public void HomeV(View view)
@@ -79,4 +82,10 @@ public class VolunteerLogin extends AppCompatActivity {
         Intent vr= new Intent(getApplicationContext(),RegisterActivityVolunteer.class);
         startActivity( vr );
     }
+    public void menu(View view) {
+        startActivity(new Intent(VolunteerLogin.this, page2.class));
+    }
+
+
+
 }

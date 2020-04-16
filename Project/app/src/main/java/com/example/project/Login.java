@@ -33,6 +33,8 @@ public class Login extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
 
+
+
     }
 
     public void home(View view) {
@@ -83,6 +85,9 @@ public class Login extends AppCompatActivity {
 
     public void register(View view) {
         startActivity(new Intent(Login.this, RegisterActivity.class));
+    }
+    public void menu(View view) {
+        startActivity(new Intent(Login.this, page2.class));
     }
 
 
