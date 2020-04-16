@@ -12,7 +12,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
+import org.json.JSONException;
+import org.json.JSONObject;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.io.BufferedReader;
@@ -24,7 +25,7 @@ import java.net.URL;
 
 public class VolunteerStats extends AppCompatActivity {
 
-    TextView result;
+    TextView result,tot,concas;
     ProgressBar progressBar;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
@@ -32,7 +33,8 @@ public class VolunteerStats extends AppCompatActivity {
 
         result=findViewById(R.id.textView24);
         progressBar = findViewById(R.id.progressBar);
-
+    tot=findViewById(R.id.textView34);
+    concas=findViewById(R.id.textView36);
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
 
         bottomNavigationView.setSelectedItemId(R.id.statsVol);
@@ -122,13 +124,31 @@ class RetrieveFeedTask extends AsyncTask<Void, Void, String> {
     }
 
     protected void onPostExecute(String response) {
+        String totalIn,confirmedIn;
         if(response == null) {
             response = "THERE WAS AN ERROR";
         }
         progressBar.setVisibility(View.GONE);
         Log.i("INFO", response);
-       result.setText(response);
 
+
+        try {
+            // get JSONObject from JSON file
+            JSONObject obj = new JSONObject(response);
+
+            // fetch JSONObject named employee
+            JSONObject summary = obj.getJSONObject("summary");
+            // get employee name and salary
+            totalIn = summary.getString("totalConfirmed");
+            confirmedIn = summary.getString("confirmedCasesIndian");
+            // set employee name and salary in TextView's
+            tot.setText(totalIn);
+            concas.setText(confirmedIn);
+
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
 
         }
