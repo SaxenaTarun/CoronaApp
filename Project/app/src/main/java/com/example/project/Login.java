@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
@@ -30,8 +31,17 @@ public class Login extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.login );
 
-
+        Button menu=findViewById(R.id.button112);
         firebaseAuth = FirebaseAuth.getInstance();
+
+
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i112=new Intent(getApplicationContext(),page2.class);
+                startActivity(i112);
+            }
+        });
 
     }
 

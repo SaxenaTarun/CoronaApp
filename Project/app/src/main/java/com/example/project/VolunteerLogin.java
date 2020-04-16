@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -23,8 +24,17 @@ public class VolunteerLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.volunteer_login);
-
+        Button menu=findViewById(R.id.button111);
         firebaseAuth = FirebaseAuth.getInstance();
+
+
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i113=new Intent(getApplicationContext(),page2.class);
+                startActivity(i113);
+            }
+        });
     }
 
     public void HomeV(View view)
@@ -79,4 +89,7 @@ public class VolunteerLogin extends AppCompatActivity {
         Intent vr= new Intent(getApplicationContext(),RegisterActivityVolunteer.class);
         startActivity( vr );
     }
+
+
+
 }

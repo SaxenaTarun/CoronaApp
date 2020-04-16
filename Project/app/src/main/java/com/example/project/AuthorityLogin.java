@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -18,11 +19,21 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class AuthorityLogin extends AppCompatActivity {
 
+
+    Button menu=findViewById(R.id.button111);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.authority_login);
 
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i111=new Intent(getApplicationContext(),page2.class);
+                startActivity(i111);
+            }
+        });
 
     }
 
@@ -38,4 +49,6 @@ public class AuthorityLogin extends AppCompatActivity {
     public void rega(View view) {
         startActivity(new Intent(AuthorityLogin.this, RegisterActivityAuthority.class));
     }
+
+
 }
