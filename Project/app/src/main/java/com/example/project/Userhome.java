@@ -1,11 +1,13 @@
 package com.example.project;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -18,12 +20,23 @@ import androidx.core.content.ContextCompat;
 import com.example.project.ui.gallery.GalleryFragment;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Userhome extends AppCompatActivity {
+
+    public static final String TAG = "UserhomeJava";
     private static final int MY_PERMISSIONS_REQUEST_ACCESS_COURSE_LOCATION =1 ;
     TextView fetch;
-
+    FirebaseAuth firebaseAuth;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    String userid;
     private FusedLocationProviderClient fusedLocationClient;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,15 +46,17 @@ public class Userhome extends AppCompatActivity {
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
-    fetch.setOnClickListener(new View.OnClickListener() {
-        @Override
+        fetch.setOnClickListener(new View.OnClickListener() {
+            @Override
 
-        public void onClick(View v) {
+            public void onClick(View v) {
 
-            fetchLocation();
+                fetchLocation();
 
-        }
-    });
+            }
+        });
+        firebaseAuth = FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
 
     }
 
@@ -107,6 +122,29 @@ public class Userhome extends AppCompatActivity {
                                 Double longitude=location.getLongitude();
 
                                 Toast.makeText(getApplicationContext(),"longitude="+longitude+"latitude="+latitude,Toast.LENGTH_LONG).show();
+
+                                userid = firebaseAuth.getCurrentUser().getUid();
+                                DocumentReference documentReference = db.collection("location").document(userid);
+                                Map<String, Object> user = new HashMap<>();
+                                user.put("userid",userid);
+                                user.put("latitude",latitude.toString());
+                                user.put("longidtude",longitude.toString());
+                                db.collection("")
+                                        .add(user)
+                                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                            @SuppressLint("LongLogTag")
+                                            @Override
+                                            public void onSuccess(DocumentReference documentReference) {
+                                                Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+                                            }
+                                        })
+                                        .addOnFailureListener(new OnFailureListener() {
+                                            @SuppressLint("LongLogTag")
+                                            @Override
+                                            public void onFailure(@NonNull Exception e) {
+                                                Log.w(TAG, "Error adding document", e);
+                                            }
+                                        });
 
                             }
                         }

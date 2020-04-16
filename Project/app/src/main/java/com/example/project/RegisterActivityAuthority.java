@@ -123,7 +123,7 @@ public class RegisterActivityAuthority extends AppCompatActivity {
                     user.put("role","Authority");
                     user.put("occupation",y);
                     user.put("workpalce",place);
-                    db.collection("")
+                    db.collection("Authorities")
                             .add(user)
                             .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                                 @SuppressLint("LongLogTag")
