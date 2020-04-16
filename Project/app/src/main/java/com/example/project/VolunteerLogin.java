@@ -27,7 +27,6 @@ public class VolunteerLogin extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
 
 
-
     }
 
     public void HomeV(View view)
@@ -35,10 +34,10 @@ public class VolunteerLogin extends AppCompatActivity {
 //        Intent vph= new Intent(getApplicationContext(),VolunteerHome.class);
 //        startActivity( (getApplicationContext()),VolunteerHome.class);
 //        startActivity( vph );
-        if (firebaseAuth.getCurrentUser() != null) {
-            startActivity(new Intent(VolunteerLogin.this, VolunteerHome.class));
-            finish();
-        }
+//        if (firebaseAuth.getCurrentUser() != null) {
+//            startActivity(new Intent(VolunteerLogin.this, VolunteerHome.class));
+//            finish();
+//        }
         vemail = findViewById(R.id.editText2);
         vpassword = findViewById(R.id.editText3);
         final ProgressBar progressBar = findViewById(R.id.progressBar2);
