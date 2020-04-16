@@ -3,6 +3,9 @@ package com.example.project;
 import android.os.Bundle;
 import android.renderscript.Type;
 import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,18 +17,22 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 import java.util.Map;
 
 public class Data extends AppCompatActivity {
     private static final String TAG = "DataJava";
     private static ArrayList<Type> mArrayList = new ArrayList<>();
     FirebaseFirestore db = FirebaseFirestore.getInstance();
+    ListView listView;
+    ArrayList<String> arrayList = new ArrayList();
+    ArrayAdapter<String> arrayAdapter;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.datalayout);
 
+        listView = findViewById(R.id.listview);
+        arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1);
+        listView.setAdapter(arrayAdapter);
         db.collection("users")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -37,7 +44,15 @@ public class Data extends AppCompatActivity {
 //                                List<Type> types = (List<Type>) QueryDocumentSnapshot.toObject(Type.class);
                                     String str1 = document.getId();
                                     Map<String, Object> str2 = document.getData();
-
+//                                    arrayList.add(str2);
+                                    String fullname = (String) document.get("fullname");
+                                    String age = (String) document.get("age");
+                                    String email = (String) document.get("email");
+                                    arrayList.add(fullname);
+                                    arrayList.add(email);
+                                    arrayList.add(email);
+                                Toast.makeText(getApplicationContext(),fullname+age+email,Toast.LENGTH_SHORT).show();
+//                                    arrayAdapter.notify();
 //                                    mArrayList.addAll((Collection<? extends Type>) str2);
                                 // Add all to your list
 //                                mArrayList.addAll((Collection<? extends Type>) document);
