@@ -2,14 +2,9 @@ package com.example.project;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
-
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.project.ui.gallery.GalleryFragment;
 
 
 public class AuthorityHome extends AppCompatActivity {
@@ -21,8 +16,12 @@ public class AuthorityHome extends AppCompatActivity {
         startActivity(new Intent(AuthorityHome.this,Data.class));
 
     }
-//    public void mc(View view){
-//        startActivity(new Intent(AuthorityHome.this, GalleryFragment.class));
-//
-//    }
+    public void mc(View view){
+        startActivity(new Intent(AuthorityHome.this, Map.class));
+
+    }
+    public void co(View view){
+        startActivity(new Intent(AuthorityHome.this, Organizations.class));
+
+    }
 }
