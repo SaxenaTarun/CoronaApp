@@ -132,8 +132,9 @@ public class Userhome extends AppCompatActivity {
         Intent ph=new Intent(getApplicationContext(),Prevent.class);
         startActivity(ph);
     }
-    public void ma(View view) {
-        Intent mp=new Intent(getApplicationContext(),Map.class);
-        startActivity(mp);
+
+    public void signout(View view) {
+        Intent sg=new Intent(getApplicationContext(),page2.class);
+        startActivity(sg);
     }
 }

@@ -78,4 +78,7 @@ public class AuthorityLogin extends AppCompatActivity {
     public void rega(View view) {
         startActivity(new Intent(AuthorityLogin.this, RegisterActivityAuthority.class));
     }
+    public void menu(View view) {
+        startActivity(new Intent(AuthorityLogin.this, page2.class));
+    }
 }

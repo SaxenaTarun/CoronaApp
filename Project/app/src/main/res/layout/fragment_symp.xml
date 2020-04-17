@@ -22,7 +22,7 @@
         android:id="@+id/breath"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="190dp"
         android:background="#FF0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.695"
@@ -78,11 +78,10 @@
 
     <ImageView
         android:id="@+id/lady"
-        android:layout_width="414dp"
-        android:layout_height="320dp"
+        android:layout_width="404dp"
+        android:layout_height="313dp"
         android:background="@drawable/lady"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -145,7 +144,7 @@
         android:id="@+id/shaking"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="228dp"
         android:background="#FF0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.695"
@@ -194,7 +193,7 @@
         android:id="@+id/dir"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginTop="268dp"
+        android:layout_marginTop="262dp"
         android:background="#FF0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.695"

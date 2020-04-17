@@ -24,4 +24,8 @@ public class AuthorityHome extends AppCompatActivity {
         startActivity(new Intent(AuthorityHome.this, Organizations.class));
 
     }
+    public void signout(View view){
+        startActivity(new Intent(AuthorityHome.this, page2.class));
+
+    }
 }
